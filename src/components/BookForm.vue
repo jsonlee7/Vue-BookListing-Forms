@@ -33,12 +33,14 @@
       type="radio"
       name="ownership"
       value="borrowed"
+      v-model="bookData.ownership"
     >
     <label for="bought">bought</label>
     <input
       type="radio"
       name="ownership"
       value="bought"
+      v-model="bookData.ownership"
     >
     <button
       type="submit"
