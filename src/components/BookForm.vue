@@ -1,6 +1,6 @@
 <template>
   <form
-    v-on:submit.prevent="bookSubmit()"
+    v-on:submit.prevent="bookSubmit(bookData)"
     class=""
     action="#"
     method="post"
@@ -62,8 +62,8 @@ export default {
     };
   },
   methods: {
-    bookSubmit() {
-      this.$emit("addBook", this.bookData);
+    bookSubmit(bookData) {
+      this.$emit("addBook", bookData);
     }
   }
 };
